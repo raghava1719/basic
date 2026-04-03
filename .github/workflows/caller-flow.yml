@@ -1,6 +1,6 @@
 run-name: greet-user
 on:
-  workflow-dispatch:
+  workflow_dispatch:
     inputs: 
       name:
         type: string
