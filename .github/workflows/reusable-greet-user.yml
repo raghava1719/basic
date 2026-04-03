@@ -11,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo user name and greet.
-        run: echo "welcome ${{inputs.name}}".
+        run: echo "welcome $${{inputs.name}}".
 
         
