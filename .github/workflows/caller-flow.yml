@@ -7,5 +7,7 @@ on:
 jobs:
   call-reusable-workflow:
     uses: ./.github/workflows/reusable-greet-user.yml
+    with:
+      name: inputs.name
           
         
