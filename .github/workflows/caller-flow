@@ -1,0 +1,11 @@
+run-name: greet-user
+on:
+  workflow-dispatch:
+    inputs: 
+      name:
+        type: string
+jobs:
+  call-reusable-workflow:
+    uses: ./.github/workflows/reusable-greet-user.yml
+          
+        
