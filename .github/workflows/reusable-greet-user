@@ -1,0 +1,16 @@
+run-name: reusable-workflow-to-print-hello-world
+on: 
+  workflow_call:
+    inputs:
+      name:
+        required: false
+        default: "user"
+        type: string
+jobs:
+  greet-user:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo user name and greet.
+        run: echo "welcome ${{inputs.name}}".
+
+        
